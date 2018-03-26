@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Twiga foods Email Signature Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+  <script src="template.js"></script>
+  <script src="signature.js"></script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="instructions">
+      <h4>INSTRUCTIONS TO CREATING YOUR EMAIL SIGNATURE</h4>
+      <ol>
+        <li>Enter your information.</li>
+        <li>Submit.</li>
+        <li>A new page with your signature will be loaded.</li>
+        <li>Select everything, (Usually Ctrl+A, Command + A)</li>
+        <li>Copy the content,</li>
+        <li>Paste to your email application signature editor.</li>
+      </ol>
+    </div>
+    <hr />
+    <form action="/signature" method="post" style="max-width:450px">
+      <h4>ENTER YOUR CONTACT INFORMATION</h4>
+      <div class="form-group">
+        <label for="fullnames">Full Names *</label>
+        <input type="text" class="form-control" id="fullnames" name="fullname" placeholder="Jane Doe" required>
+      </div>
+      <div class="form-group">
+        <label for="position">Position *</label>
+        <input type="text" class="form-control" id="position" name="position" placeholder="Project manager" required>
+      </div>
+      <div class="form-group">
+        <label for="mobile">Mobile Number *</label>
+        <input type="text" class="form-control" id="mobile" name="mobile" placeholder="0700000000" required>
+      </div>
+      <div class="form-group">
+        <label for="mobile2">Alternative Number</label>
+        <input type="text" class="form-control" id="mobile2" name="mobile_alternative" placeholder="0711111111">
+      </div>
+      <div class="form-group">
+        <label for="skype">Skype Name *</label>
+        <input type="text" class="form-control" id="skype" name="skype" placeholder="JDoe" required>
+      </div>
+      <div class="form-group">
+        <label for="twitter">Twitter Handle *</label>
+        <input type="text" class="form-control" id="twitter" name="twitter" placeholder="janeD" required>
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
